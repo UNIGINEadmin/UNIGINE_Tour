@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Pembayaran Turnamen</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pembayaran Turnamen</h1>
+        <p>Silakan lengkapi data pembayaran berikut.</p>
+    </header>
+
+    <main>
+        <section class="payment-form">
+            <h2>Formulir Pendaftaran </h2>
+            <!-- <p style="text-align: center; background-color: rgba(128, 255, 0, 0.548); border-radius: 5px; ">07 Desember
+                2024</p> -->
+            <p style="background-color: brown; text-align: center; border-radius: 5px; " >
+                HABIS TERJUAL !</p>
+            <form id="paymentForm">
+
+                <button onclick="document.getElementById('pop').showModal()">INFO</button>
+                <dialog id="pop" style="padding: 20px; width: 300px; height: 200px; border: solid 1px #ccc; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <button onclick="document.getElementById('pop').close()">x</button>
+                    <h1>Dear player!</h1>
+                    <p style="background-color: #ccc;" >Sebelum mendaftar tanyakan Slot dulu ke admin!</p>
+                    <strong style="color: rgb(0, 0, 0);" >0 SLOT Tersedia!</strong>
+                    <p>🎮GAMES: MOBILEGENS</p>
+                    <p>🕤TIMES: s1/ 10.00 - 11.00 </p>
+                    <p>🕤TIMES: s2/ 12.00 - 1.00 </p>
+                    <p>💳PAY: 15.000 /Tim</p>
+                </dialog>
+
+                <label for="name">TIM:
+                    <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                </label>
+
+
+                <label for="email">Nomor Tlp Leader:
+                    <input type="number" id="email" placeholder="Masukkan Nomor Anda" required>
+                </label>
+
+
+                <label for="method">Metode Pembayaran:
+                    <select id="method" required>
+                        <option value="" disabled selected>Pilih metode pembayaran</option>
+                        <option style="color: black;" value="Bank Jago">Bank Jago (9634 324 234  324)</p> (Ice teaswati)</option>
+                        <option  style="color: black;" value="DANA">DANA (851 3675 2404) (Unigine) </option>
+                        <option  style="color: black;" value="HOTELMURAH *(BAYAR SEKARANG!)*"> HOTELMURAH.com (Bayar Nanti) (ISI DENGAN SS Formulir Pendaftaran) </option>
+                        <option  style="color: black;" value="ShopeePay">ShopeePay (Coming soon) </option>
+                    </select>
+                </label>
+
+
+                <label for="file">Upload Bukti Pembayaran:
+                    <input type="file" id="file" accept="image/*" required>
+                </label>
+
+
+                <br />
+                <h4>NAMA:</h4>
+                <hr />
+                <label for="player1">Name player 1:
+                    <input type="text" id="player1" placeholder="Input Name" required>
+                </label>
+
+
+                <label for="player2">Name player 2:
+                    <input type="text" id="player2" placeholder="Input Name" required>
+                </label>
+
+
+                <label for="player3">Name player 3:
+                    <input type="text" id="player3" placeholder="Input Name" required>
+                </label>
+
+
+                <label for="player4">Name player 4:
+                    <input type="text" id="player4" placeholder="Input Name" required>
+                </label>
+
+                <label for="player5">Name player 5:
+                    <input type="text" id="player5" placeholder="Input Name" required>
+                </label>
+
+
+                <label for="playerReserve">Name player cadangan (Jika diperlukan):
+                    <input type="text" id="playerReserve" placeholder="Input Name">
+                </label>
+
+
+
+
+                <button type="button" id="send-to-wa">Kirim ke WhatsApp</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turnamen Squad | <a href="#">Kontak Kami</a></p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+
+</html>

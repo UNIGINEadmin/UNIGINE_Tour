@@ -1,0 +1,188 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), 
+                url('BANNER.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    display: none; /* Gambar hanya digunakan untuk background */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.payment-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.payment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.payment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-form label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="player"],
+.payment-form input[type="number"],
+.payment-form input[type="file"],
+.payment-form select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.payment-form input::placeholder {
+    color: #bbb;
+}
+
+/* Remove default appearance for select */
+.payment-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.payment-form button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.payment-form button:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1a1a2e;
+    color: #ddd;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .payment-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .payment-form h2 {
+        font-size: 1.6rem;
+    }
+
+    .payment-form input[type="text"],
+    .payment-form input[type="email"],
+    .payment-form input[type="file"],
+    .payment-form select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .payment-form button {
+        font-size: 1rem;
+    }
+}
