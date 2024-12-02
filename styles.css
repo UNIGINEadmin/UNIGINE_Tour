@@ -1,0 +1,57 @@
+.live-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #00f335; /* Ganti dengan warna atau gambar ikon yang sesuai */
+    border-radius: 50%;
+    animation: pulse 1s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+
+  /* CSS untuk drop-down */
+.dropdown {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown li {
+  margin: 10px 0;
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #202c63;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+.icon-text img {
+  margin-right: 8px; /* Adjust the spacing as needed */
+}
